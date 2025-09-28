@@ -1,0 +1,7 @@
+s = input("Введите предложение: ")
+print("Длина:", len(s))
+print("В нижнем регистре:", s.lower())
+print("Количество гласных:", sum(1 for ch in s.lower() if ch in "aeiou"))
+print("Замена ugly -> beauty:", s.replace("ugly", "beauty"))
+print("Начинается с 'The':", s.startswith("The"))
+print("Заканчивается на 'end':", s.endswith("end"))
